@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.google.com)",
+      "Bash(python3)",
+      "Bash(libreoffice --headless --convert-to txt \"CV Resumido Fernández \\(2026\\).docx\")",
+      "Bash(unzip -p \"CV Resumido Fernández \\(2026\\).docx\" word/document.xml)",
+      "Bash(python3 -c \"import sys, xml.etree.ElementTree as ET; root = ET.parse\\(sys.stdin\\).getroot\\(\\); ns = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}; [print\\(t.text, end=' '\\) for t in root.findall\\('.//w:t', ns\\) if t.text]\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

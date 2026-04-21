@@ -1,0 +1,28 @@
+# Archivos del Sistema
+.DS_Store
+Thumbs.db
+.~*
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (si agregás dependencies en el futuro)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Archivos de configuración local
+.env.local
+.env.*.local
+
+# Build
+dist/
+build/
