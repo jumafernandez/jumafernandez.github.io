@@ -9,7 +9,13 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "Bash(brew install *)",
+      "WebFetch(domain:jumafernandez.github.io)",
+      "Bash(curl -I https://jumafernandez.github.io)",
+      "Bash(curl -s https://jumafernandez.github.io)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jumafernandez.github.io)"
     ]
   }
 }

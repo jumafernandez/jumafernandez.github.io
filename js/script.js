@@ -26,57 +26,6 @@ if (hamburger) {
     });
 }
 
-// ============================================
-// BLOG - Cargar posts dinámicamente
-// ============================================
-const blogPosts = [
-    {
-        title: "Fine-tuning de Modelos de Lenguaje: Guía Práctica",
-        date: "20 de Abril, 2025",
-        excerpt: "Una exploración profunda sobre cómo adaptar modelos de lenguaje pre-entrenados a tareas específicas de dominio, con ejemplos prácticos usando infraestructura HPC.",
-        slug: "fine-tuning-llms"
-    },
-    {
-        title: "IA Generativa en la Nube: Oportunidades y Desafíos",
-        date: "10 de Abril, 2025",
-        excerpt: "Análisis de las últimas tendencias en IA generativa, escalabilidad en la nube y cómo las universidades pueden aprovecharlo para investigación.",
-        slug: "ia-generativa-nube"
-    },
-    {
-        title: "NLP y Análisis de Sentimientos en Redes Sociales",
-        date: "1 de Abril, 2025",
-        excerpt: "Técnicas modernas de procesamiento de lenguaje natural para extraer insights de datos textuales en redes sociales y análisis de opinión pública.",
-        slug: "nlp-sentimientos"
-    },
-    {
-        title: "Reduciendo el Abandono Universitario con Machine Learning",
-        date: "25 de Marzo, 2025",
-        excerpt: "Cómo utilizar técnicas de ML para identificar patrones de abandono estudiantil y diseñar intervenciones efectivas en sistemas universitarios.",
-        slug: "ml-abandono-universitario"
-    }
-];
-
-function renderBlogPosts() {
-    const blogGrid = document.getElementById('blog-posts');
-
-    if (blogGrid) {
-        blogGrid.innerHTML = blogPosts.map(post => `
-            <article class="blog-post">
-                <div class="blog-post-header">
-                    <p class="blog-post-date">📅 ${post.date}</p>
-                    <h3 class="blog-post-title">${post.title}</h3>
-                </div>
-                <div class="blog-post-content">
-                    <p class="blog-post-excerpt">${post.excerpt}</p>
-                    <a href="#" class="blog-post-link">Leer más →</a>
-                </div>
-            </article>
-        `).join('');
-    }
-}
-
-// Renderizar blog al cargar
-document.addEventListener('DOMContentLoaded', renderBlogPosts);
 
 // ============================================
 // FORMULARIO DE CONTACTO
