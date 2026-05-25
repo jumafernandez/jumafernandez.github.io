@@ -2,14 +2,14 @@
    VARIABLES Y RESET
    ============================================ */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --dark-bg: #f5f5f5;
+    --primary-color: #1a1a1a;
+    --secondary-color: #404040;
+    --dark-bg: #fafafa;
     --text-dark: #1a1a1a;
-    --text-light: #555555;
-    --border-color: #d0d0d0;
-    --accent-color: #2c3e50;
-    --light-gray: #f8f8f8;
+    --text-light: #666666;
+    --border-color: #e5e5e5;
+    --accent-color: #3b82f6;
+    --light-gray: #f9f9f9;
     --transition: all 0.3s ease;
 }
 
@@ -110,14 +110,14 @@ a:hover {
    ============================================ */
 .btn {
     display: inline-block;
-    padding: 0.9rem 2rem;
+    padding: 0.75rem 1.8rem;
     border-radius: 6px;
     font-weight: 600;
     text-align: center;
     cursor: pointer;
     transition: var(--transition);
     border: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .btn-primary {
@@ -156,17 +156,12 @@ a:hover {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
 
 .nav-menu {
     display: flex;
@@ -204,13 +199,13 @@ a:hover {
    ============================================ */
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background: #ffffff;
-    padding: 4rem 0;
+    padding: 6rem 2rem;
 }
 
 .hero-content {
@@ -234,26 +229,28 @@ a:hover {
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 4.5rem;
+    margin-bottom: 0.8rem;
     color: var(--primary-color);
-    font-weight: 700;
-    letter-spacing: -0.5px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
     font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .hero-description {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     color: var(--text-light);
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-    max-width: 700px;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -266,37 +263,37 @@ a:hover {
 }
 
 .hero .btn-primary {
-    background: var(--primary-color);
+    background: var(--accent-color);
     color: white;
     font-weight: 600;
-    padding: 1rem 2.2rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.9rem 2rem;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 .hero .btn-primary:hover {
-    background: var(--secondary-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #2563eb;
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+    transform: translateY(-2px);
 }
 
 .hero .btn-secondary {
-    border-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     color: var(--primary-color);
-    padding: 1rem 2.2rem;
+    padding: 0.8rem 1.9rem;
     font-weight: 600;
     background: white;
 }
 
 .hero .btn-secondary:hover {
-    background: var(--dark-bg);
-    border-color: var(--secondary-color);
-    color: var(--secondary-color);
+    background: var(--primary-color);
+    color: white;
 }
 
 /* ============================================
    ABOUT SECTION
    ============================================ */
 .about {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: #ffffff;
 }
 
@@ -393,7 +390,7 @@ a:hover {
    RESEARCH SECTION
    ============================================ */
 .research {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--light-gray);
 }
 
@@ -435,7 +432,7 @@ a:hover {
    PUBLICACIONES
    ============================================ */
 .publications {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: #ffffff;
 }
 
@@ -514,7 +511,7 @@ a:hover {
    TEACHING SECTION
    ============================================ */
 .teaching {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: #ffffff;
 }
 
@@ -569,7 +566,7 @@ a:hover {
    BLOG SECTION
    ============================================ */
 .blog {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: #ffffff;
 }
 
@@ -645,7 +642,7 @@ a:hover {
    CONTACT SECTION
    ============================================ */
 .contact {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--light-gray);
 }
 
