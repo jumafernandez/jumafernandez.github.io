@@ -15,7 +15,8 @@
       "WebFetch(domain:jumafernandez.github.io)",
       "Bash(curl -I https://jumafernandez.github.io)",
       "Bash(curl -s https://jumafernandez.github.io)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jumafernandez.github.io)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://jumafernandez.github.io)",
+      "Bash(gh api *)"
     ]
   }
 }
